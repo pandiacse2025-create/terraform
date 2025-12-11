@@ -15,7 +15,7 @@ data "aws_subnet" "selected" {
 resource "aws_instance" "webserver" {
   ami           = data.aws_ami.instance.id
   instance_type = var.machinetype
-  key_name      = "28mercury"
+  key_name      = "democlass2"
   subnet_id     = data.aws_subnet.selected.id
 
   tags = {
